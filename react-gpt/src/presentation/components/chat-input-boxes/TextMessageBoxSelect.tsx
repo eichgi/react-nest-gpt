@@ -1,4 +1,4 @@
-import {FormEvent, useState} from "react";
+import { FormEvent, useState } from 'react';
 
 interface Props {
   onSendMessage: (message: string, selectedOption: string) => void;
@@ -12,19 +12,20 @@ interface Option {
   text: string;
 }
 
-export const TextMessageBoxSelect = ({onSendMessage, placeholder, disableCorrections = false, options}: Props) => {
+export const TextMessageBoxSelect = ({ onSendMessage, placeholder, disableCorrections = false, options }: Props) => {
 
-  const [message, setMessage] = useState<string>("");
-  const [selectedOption, setSelectedOption] = useState<string>("");
+  const [message, setMessage] = useState<string>('');
+  const [selectedOption, setSelectedOption] = useState<string>('');
 
   const handleSendMessage = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (message.trim().length === 0) return;
+    if (selectedOption === '') return;
 
     onSendMessage(message, selectedOption);
-    setMessage("");
-  }
+    setMessage('');
+  };
 
   return (
     <form
