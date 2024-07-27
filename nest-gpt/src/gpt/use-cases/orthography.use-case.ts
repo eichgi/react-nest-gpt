@@ -38,7 +38,6 @@ export const orthographyCheckUseCase = async (openai: OpenAI, options: Options) 
       type: 'json_object'
     }
   });
-  console.log(completion);
 
   const jsonResponse = JSON.parse(completion.choices[0].message.content);
   return jsonResponse;
