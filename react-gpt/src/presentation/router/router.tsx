@@ -2,13 +2,11 @@ import {createBrowserRouter, Navigate} from "react-router-dom";
 import DashboardLayout from "../layouts/DashboardLayout.tsx";
 import AssistantPage from "../pages/assistant/AssistantPage.tsx";
 import AudioToTextPage from "../pages/audio-to-text/AudioToTextPage.tsx";
-import ProsConsPage from "../pages/pros-cons/ProsConsPage.tsx";
-import ProsConsStreamPage from "../pages/pros-cons-stream/ProsConsStreamPage.tsx";
 import TranslatePage from "../pages/translate-page/TranslatePage.tsx";
 import TextToAudioPage from "../pages/text-to-audio/TextToAudioPage.tsx";
 import ImageGenerationPage from "../pages/image-generation/ImageGenerationPage.tsx";
 import ImageTunningPage from "../pages/image-tunning-page/ImageTunningPage.tsx";
-import {OrthographyPage} from "../pages";
+import { OrthographyPage, ProsConsPage, ProsConsStreamPage } from '../pages';
 
 
 export const menuRoutes = [
