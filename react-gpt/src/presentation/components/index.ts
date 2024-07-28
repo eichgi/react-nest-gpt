@@ -1,4 +1,5 @@
 export * from './chat-bubbles/GptMessage.tsx';
+export * from './chat-bubbles/GptMessageAudio.tsx';
 export * from './chat-bubbles/MyMessage.tsx';
 export * from './Sidebar/SidebarMenuItem.tsx';
 export * from './loaders/TypingLoader.tsx';
